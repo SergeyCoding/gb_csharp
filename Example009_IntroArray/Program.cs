@@ -6,10 +6,6 @@ array[0] = 12;
 
 System.Console.WriteLine(array[0]);
 
-
-
-
-
 int Max(int a, int b, int c)
 {
     int res = a;
@@ -17,3 +13,4 @@ int Max(int a, int b, int c)
     if (res < c) res = c;
     return res;
 }
+
