@@ -2,9 +2,13 @@
 
 int[] array = { 11, 21, 31, 41, 15, 61, 17, 18, 19 };
 
-array[0] = 12;
+var max1 = Max(array[0], array[1], array[2]);
+var max2 = Max(array[3], array[4], array[5]);
+var max3 = Max(array[6], array[7], array[8]);
 
-System.Console.WriteLine(array[0]);
+var result = Max(max1, max2, max3);
+
+System.Console.WriteLine(result);
 
 int Max(int a, int b, int c)
 {
