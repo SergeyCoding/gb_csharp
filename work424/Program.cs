@@ -1,4 +1,5 @@
-﻿Console.Write("Введите число: ");
+﻿// Задача 24
+Console.Write("Введите число: ");
 int num = int.Parse(Console.ReadLine());
 
 int GetNums(int number)
@@ -11,4 +12,4 @@ int GetNums(int number)
     return sum;
 }
 
-System.Console.WriteLine($"{GetNums(num)}");
+Console.WriteLine($"{GetNums(num)}");
