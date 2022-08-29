@@ -8,14 +8,7 @@
     return arr;
 }
 
-void PrintArray(int[] coll)
-{
-    int i = 0;
-    while (i < coll.Length)
-    {
-        System.Console.Write($"{coll[i]} ");
-        i++;
-    }
-}
 
-PrintArray(RandomArray());
+System.Console.WriteLine(string.Join(", ", RandomArray()));
+
+new System.Random().Next()
