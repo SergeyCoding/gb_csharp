@@ -10,5 +10,3 @@
 
 
 System.Console.WriteLine(string.Join(", ", RandomArray()));
-
-new System.Random().Next()
