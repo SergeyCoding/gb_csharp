@@ -9,7 +9,7 @@
     return res;
 }
 
-int[] PositiveAndNegative()
+int[] PositiveAndNegative(int[] array)
 {
     int[] res = new int[2];
 
@@ -29,20 +29,23 @@ int[] PositiveAndNegative()
     return res;
 }
 
-int PositiveSum(int[] array)
+int[] PositiveAndNegativeSum(int[] array)
 {
     int positiveSum = 0;
+    int negativeSum = 0;
 
-    foreach (var item in array)
+    foreach (var el in array)
     {
         positiveSum += el > 0 ? el : 0;
+        negativeSum += el < 0 ? el : 0;
     }
 
-    System.Console.WriteLine($"{PositiveSum}");
+    return new int[] { positiveSum, negativeSum };
+
 }
 
 int[] myArray = GetArray(10, -100, 100);
 int[] result = PositiveAndNegativeSum(myArray);
 Console.WriteLine(String.Join(" ", myArray));
 Console.WriteLine(String.Join(" ", result));
-PositiveSum(myArray);
+PositiveAndNegativeSum(myArray);

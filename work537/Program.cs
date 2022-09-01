@@ -1,4 +1,4 @@
-﻿// 535
+﻿// 537
 
 int[] GetArray(int size, int minValue, int maxValue)
 {
@@ -11,16 +11,23 @@ int[] GetArray(int size, int minValue, int maxValue)
     return res;
 }
 
-void Proizv(int[] arr)
+int[] Proizv(int[] arr)
 {
-    for (int i = 0; i < arr.Length / 2 + arr.Length % 2; i++)
+    int[] result = new int[arr.Length / 2 + arr.Length % 2];
+    int first = 0;
+    int last = arr.Length - 1;
+
+    while (first < last)
     {
-        int k = arr.Length - 1 - i;
-        if (arr.Length % 2 == 1 && i == k)
-            Console.Write($"{arr[i]} ");
-        else
-            Console.Write($"{arr[i] * arr[k]} ");
+        result[first] = arr[first] * arr[last];
+        first++;
+        last--;
     }
+
+    if (first == last)
+        result[first] = arr[first];
+
+    return result;
 }
 
 int[] ProductionArray(int[] array)
@@ -43,6 +50,6 @@ int[] myArray = GetArray(10, -10, 100);
 // myArray = new int[] { 1, 2 };
 Console.WriteLine(String.Join(" ", myArray));
 
-Proizv(myArray);
-System.Console.WriteLine();
+
+Console.WriteLine(String.Join(" ", Proizv(myArray)));
 Console.WriteLine(String.Join(" ", ProductionArray(myArray)));
