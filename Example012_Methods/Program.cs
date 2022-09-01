@@ -25,7 +25,6 @@ System.Console.WriteLine(Method3());
 // Вид 3
 string Method4(Int16 count, char c)
 {
-    int i = 0;
     string result = string.Join('-', c);
     return result;
 }
