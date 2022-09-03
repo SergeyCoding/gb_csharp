@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example012_Methods", "Examp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example004_Div", "Example004_Div\Example004_Div.csproj", "{0F118405-1665-4CF4-A44D-479458FB173E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example013_RecursionAlgorithm", "Example013_RecursionAlgorithm\Example013_RecursionAlgorithm.csproj", "{C7EFBE5C-6BA1-42F0-B2D9-EA7957E1AB4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,9 @@ Global
 		{0F118405-1665-4CF4-A44D-479458FB173E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F118405-1665-4CF4-A44D-479458FB173E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F118405-1665-4CF4-A44D-479458FB173E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7EFBE5C-6BA1-42F0-B2D9-EA7957E1AB4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7EFBE5C-6BA1-42F0-B2D9-EA7957E1AB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7EFBE5C-6BA1-42F0-B2D9-EA7957E1AB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7EFBE5C-6BA1-42F0-B2D9-EA7957E1AB4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
