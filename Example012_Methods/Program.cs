@@ -1,5 +1,7 @@
 ﻿#pragma warning disable CS8321
 // Вид 1
+using Example012;
+
 void Method1()
 {
     System.Console.WriteLine("");
@@ -77,3 +79,5 @@ void SelectionSort(int[] arr)
 
 SelectionSort(arr);
 PrintArray(arr);
+
+System.Console.WriteLine(new PrintArray2(arr));
