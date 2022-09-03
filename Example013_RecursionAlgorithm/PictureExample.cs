@@ -43,21 +43,22 @@ class PictureExample
 
     void FillImage(int row, int col)
     {
-        if (pic[row, col] == 0)
-        {
-            pic[row, col] = 1;
-            FillImage(row - 1, col);
-            FillImage(row, col - 1);
-            FillImage(row + 1, col);
-            FillImage(row, col + 1);
-        }
+        if (row < 0 || col < 0 || row >= pic.GetLength(0) || col >= pic.GetLength(1) || pic[row, col] == 1)
+            return;
+
+        pic[row, col] = 1;
+
+        FillImage(row - 1, col);
+        FillImage(row, col - 1);
+        FillImage(row + 1, col);
+        FillImage(row, col + 1);
     }
 
     public void Execute()
     {
         PrintImage(pic);
 
-        FillImage(13, 13);
+        FillImage(1, 1);
         PrintImage(pic);
     }
 }
