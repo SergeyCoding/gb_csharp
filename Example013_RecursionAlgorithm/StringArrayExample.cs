@@ -17,9 +17,9 @@ class StringArrayExample
         {
             for (int col = 0; col < 5; col++)
             {
-                System.Console.Write($"-{table[row, col],10}- ");
+                Console.Write($"-{table[row, col],10}- ");
             }
-            System.Console.WriteLine();
+            Console.WriteLine();
         }
     }
 }

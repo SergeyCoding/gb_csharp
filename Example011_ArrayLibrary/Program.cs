@@ -15,7 +15,7 @@ void PrintArray(int[] coll)
     int i = 0;
     while (i < coll.Length)
     {
-        System.Console.WriteLine(coll[i]);
+        Console.WriteLine(coll[i]);
         i++;
     }
 }
@@ -43,4 +43,4 @@ FillArray(array);
 PrintArray(array);
 var res = IndexOf(array, 4);
 
-System.Console.WriteLine(res);
+Console.WriteLine(res);

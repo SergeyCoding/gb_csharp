@@ -13,10 +13,10 @@ public class Matrix
         {
             for (int col = 0; col < matrix.GetLength(1); col++)
             {
-                System.Console.Write($"{matrix[row, col],10} ");
+                Console.Write($"{matrix[row, col],10} ");
             }
 
-            System.Console.WriteLine();
+            Console.WriteLine();
         }
     }
 
