@@ -5,7 +5,7 @@ int a2 = x % 10; // последнее число
 
 int res = a1 * 10 + a2;
 
-System.Console.WriteLine($"{x} -> {res}");
+Console.WriteLine($"{x} -> {res}");
 
 // Ок?
 

@@ -10,7 +10,7 @@ while (i < array.Length)
 {
     if (array[i] == find)
     {
-        System.Console.WriteLine(i);
+        Console.WriteLine(i);
         break;
     }
     i++;

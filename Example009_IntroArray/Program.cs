@@ -8,7 +8,7 @@ var max3 = Max(array[6], array[7], array[8]);
 
 var result = Max(max1, max2, max3);
 
-System.Console.WriteLine(result);
+Console.WriteLine(result);
 
 int Max(int a, int b, int c)
 {

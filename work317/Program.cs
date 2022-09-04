@@ -4,10 +4,10 @@ Console.Write("Введите Y: ");
 int y = int.Parse(Console.ReadLine());
 
 if (x > 0 && y > 0)
-    System.Console.WriteLine(1);
+    Console.WriteLine(1);
 else if (x < 0 && y > 0)
-    System.Console.WriteLine(2);
+    Console.WriteLine(2);
 else if (x < 0 && y < 0)
-    System.Console.WriteLine(3);
+    Console.WriteLine(3);
 else
-    System.Console.WriteLine(4);
+    Console.WriteLine(4);

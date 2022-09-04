@@ -1,9 +1,9 @@
-﻿System.Console.Write("Первое число:");
+﻿Console.Write("Первое число:");
 int x1 = int.Parse(Console.ReadLine());
-System.Console.Write("Второе число:");
+Console.Write("Второе число:");
 int x2 = int.Parse(Console.ReadLine());
 
 if (x1 * x1 == x2 || x1 == x2 * x2)
-    System.Console.WriteLine("да");
+    Console.WriteLine("да");
 else
-    System.Console.WriteLine("нет");
+    Console.WriteLine("нет");

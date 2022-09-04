@@ -4,7 +4,7 @@ using Example012;
 
 void Method1()
 {
-    System.Console.WriteLine("");
+    Console.WriteLine("");
 }
 
 Method1();
@@ -12,7 +12,7 @@ Method1();
 // Вид 2
 void Method2(string msg)
 {
-    System.Console.WriteLine(msg);
+    Console.WriteLine(msg);
 }
 
 Method2("Text");
@@ -22,7 +22,7 @@ int Method3()
 {
     return DateTime.Now.Year;
 }
-System.Console.WriteLine(Method3());
+Console.WriteLine(Method3());
 
 // Вид 3
 string Method4(Int16 count, char c)
@@ -39,9 +39,9 @@ for (int i = 2; i < 10; i++)
 {
     for (int j = 2; j < 10; j++)
     {
-        System.Console.Write(i * j + " ");
+        Console.Write(i * j + " ");
     }
-    System.Console.WriteLine();
+    Console.WriteLine();
 }
 
 int[] arr = { 1, 5, 4, 3, 2, 6, 7, 1, 1 };
@@ -50,9 +50,9 @@ void PrintArray(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        System.Console.Write($"{arr[i]} ");
+        Console.Write($"{arr[i]} ");
     }
-    System.Console.WriteLine();
+    Console.WriteLine();
 }
 
 PrintArray(arr);
@@ -80,4 +80,4 @@ void SelectionSort(int[] arr)
 SelectionSort(arr);
 PrintArray(arr);
 
-System.Console.WriteLine(new PrintArray2(arr));
+Console.WriteLine(new PrintArray2(arr));

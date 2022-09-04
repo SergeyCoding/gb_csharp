@@ -9,4 +9,4 @@
 }
 
 
-System.Console.WriteLine(string.Join(", ", RandomArray()));
+Console.WriteLine(string.Join(", ", RandomArray()));

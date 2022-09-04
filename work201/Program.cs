@@ -8,4 +8,4 @@ int a2 = x % 10;
 int max = a1;
 if (max < a2) max = a2;
 
-System.Console.WriteLine($"{x} -> {max}");
+Console.WriteLine($"{x} -> {max}");
