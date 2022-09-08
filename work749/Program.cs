@@ -27,22 +27,15 @@ void PrintArray(int[,] array)
     }
 }
 
-int[,] GetArraSqrQuantity(int[,] arr)
+void GetArraSqrQuantity(int[,] arr)
 {
-    int[,] result = new int[arr.GetLength(0), arr.GetLength(1)];
-    for (int i = 0; i < arr.GetLength(0); i++)
+    for (int i = 0; i < arr.GetLength(0); i += 2)
     {
-        for (int j = 0; j < arr.GetLength(1); j++)
+        for (int j = 0; j < arr.GetLength(1); j += 2)
         {
-            if (i % 2 == 0 && j % 2 == 0)
-            {
-                result[i, j] = arr[i, j] * arr[i, j];
-                continue;
-            }
-            result[i, j] = arr[i, j];
+            arr[i, j] *= arr[i, j] * arr[i, j];
         }
     }
-    return result;
 }
 
 Console.Write("Введите rows: ");
@@ -60,4 +53,5 @@ if (rows < 1 || cols < 1)
 var arr = GetArray(rows, cols, 1, 100);
 PrintArray(arr);
 Console.WriteLine();
-PrintArray(GetArraSqrQuantity(arr));
+GetArraSqrQuantity(arr);
+PrintArray(arr);
