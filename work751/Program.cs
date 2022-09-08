@@ -1,4 +1,4 @@
-﻿// 749
+﻿// 751
 
 int[,] GetArray(int rows, int cols, int minValue, int maxValue)
 {
@@ -27,16 +27,19 @@ void PrintArray(int[,] array)
     }
 }
 
-void GetArraSqrQuantity(int[,] arr)
+int Min(int a, int b)
 {
-    for (int i = 0; i < arr.GetLength(0); i++)
-    {
-        for (int j = 0; j < arr.GetLength(1); j++)
-        {
-            if (i % 2 == 0 && j % 2 == 0)
-                arr[i, j] = arr[i, j] * arr[i, j];
-        }
-    }
+    return a < b ? a : b;
+}
+
+int SumMainElementsArray(int[,] arr)
+{
+    int sum = 0;
+
+    for (int i = 0; i < Min(arr.GetLength(0), arr.GetLength(1)); i++)
+        sum += arr[i, i];
+
+    return sum;
 }
 
 Console.Write("Введите rows: ");
@@ -54,5 +57,4 @@ if (rows < 1 || cols < 1)
 var arr = GetArray(rows, cols, 1, 100);
 PrintArray(arr);
 Console.WriteLine();
-GetArraSqrQuantity(arr)
-PrintArray(arr);
+Console.WriteLine(SumMainElementsArray(arr));
