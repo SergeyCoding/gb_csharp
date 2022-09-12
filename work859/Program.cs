@@ -82,5 +82,5 @@ if (rows < 1 || cols < 1)
 
 var arr = GetArray(rows, cols, 1, 3);
 PrintArray(arr);
-System.Console.WriteLine();
+Console.WriteLine();
 PrintArray(DeleteMinElement(arr));

@@ -54,7 +54,7 @@ if (rows < 1 || cols < 1)
 
 if (rows != cols)
 {
-    System.Console.WriteLine("Невозможно");
+    Console.WriteLine("Невозможно");
     return;
 }
 

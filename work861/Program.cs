@@ -3,7 +3,7 @@
 void PrintArray(int[] array, int tab)
 {
     Console.Write(new string('\t', tab));
-    System.Console.WriteLine(string.Join("\t\t", array));
+    Console.WriteLine(string.Join("\t\t", array));
 }
 
 int[] PascalTriangleNext(int[] arr)
